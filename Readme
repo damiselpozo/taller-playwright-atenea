@@ -1,6 +1,6 @@
 ejecutar pruebas -- npx playwright test --ui
 
-git
+
 
 # Pasos para subir tu código a GitHub
 
@@ -11,15 +11,42 @@ git
 4. Agrega la URL de tu repositorio remoto:
    git remote add origin https://github.com/usuario/nombre-repo.git
    (Reemplaza "usuario/nombre-repo" por tu usuario y nombre de repositorio)
-5. Agrega todos los archivos al control de versiones:
+5. git status
+6. Agrega todos los archivos al control de versiones:
    git add .
-6. Realiza un commit con un mensaje descriptivo:
+7. git status
+8. Realiza un commit con un mensaje descriptivo:
    git commit -m "Primer commit"
-7. Sube tu código al repositorio remoto:
+9. Sube tu código al repositorio remoto:
    git push -u origin master
    (Si tu rama principal se llama "main", usa "main" en vez de "master")
 
 # Si ya tienes un repositorio y solo quieres subir cambios nuevos:
+
+# Verifica el estado de los archivos (modificados, nuevos, eliminados)
+git status
+
+# Descarga información actualizada del repositorio remoto y elimina ramas remotas que ya no existen
+git fetch -p
+
+# Trae los últimos cambios del repositorio remoto a tu rama local
+git pull origin
+
+# (Opcional) Crea una nueva rama para tus cambios
+git branch updateReadme
+
+# Cambia a la nueva rama creada
+git checkout updateReadme
+
+# Verifica nuevamente el estado de los archivos
+git status
+
+# Agrega los archivos modificados al área de preparación (staging)
 git add .
+
+# Realiza un commit con un mensaje que describa los cambios realizados
 git commit -m "Descripción de los cambios"
+
+# Sube tus cambios a la rama correspondiente en el repositorio remoto
 git push
+
