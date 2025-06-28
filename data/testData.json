@@ -4,5 +4,23 @@
         "apellido": "Pozo",
         "email": "email@valido.com",
         "contraseña": "123456"
+    },
+    "usuarioInValido": {
+        "nombre": "Damisel",
+        "apellido": "Pozo",
+        "email": "email@valido.com",
+        "contraseña": "123456tore"
+    },
+    "usuarioSinContrasena": {
+        "nombre": "Damisel",
+        "apellido": "Pozo",
+        "email": "email@valido.com",
+        "contraseña": ""
+    },
+    "usuarioEmailInvalido": {
+        "nombre": "Damisel",
+        "apellido": "Pozo",
+        "email": "email@valido.",
+        "contraseña": ""
     }
 }
