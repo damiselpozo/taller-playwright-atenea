@@ -23,30 +23,37 @@ ejecutar pruebas -- npx playwright test --ui
 
 # Si ya tienes un repositorio y solo quieres subir cambios nuevos:
 
-# Verifica el estado de los archivos (modificados, nuevos, eliminados)
+### Verifica el estado de los archivos (modificados, nuevos, eliminados)
 git status
 
-# Descarga información actualizada del repositorio remoto y elimina ramas remotas que ya no existen
+### Descarga información actualizada del repositorio remoto y elimina ramas remotas que ya no existen
 git fetch -p
 
-# Trae los últimos cambios del repositorio remoto a tu rama local
+### Trae los últimos cambios del repositorio remoto a tu rama local
 git pull origin
 
-# (Opcional) Crea una nueva rama para tus cambios
+### (Opcional) Crea una nueva rama para tus cambios
 git branch updateReadme
 
-# Cambia a la nueva rama creada
+### Cambia a la nueva rama creada
 git checkout updateReadme
 
-# Verifica nuevamente el estado de los archivos
+### Verifica nuevamente el estado de los archivos
 git status
 
-# Agrega los archivos modificados al área de preparación (staging)
+### Agrega los archivos modificados al área de preparación (staging)
 git add .
 
-# Realiza un commit con un mensaje que describa los cambios realizados
+### Realiza un commit con un mensaje que describa los cambios realizados
 git commit -m "Descripción de los cambios"
 
-# Sube tus cambios a la rama correspondiente en el repositorio remoto
+### Sube tus cambios a la rama correspondiente en el repositorio remoto
 git push
+
+### crear pull requests para luego integrarlo, luego se actualiza nuevamente las ramas locales 
+git checkout main
+git fetch -p
+git pull
+
+
 
